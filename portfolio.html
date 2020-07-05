@@ -4,31 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Web studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Шапка сайта-->
-    <header>
-      <nav>
-        <a href="./index.html" aria-label="Логотип"> <span>Web</span>Studio</a>
-        <ul>
-          <li>
-            <a href="">Студия</a>
+    <header class="header">
+      <nav class="navigation">
+        <a href="./index.html" class="logotype link" aria-label="Логотип">
+          <span class="name">Web</span>Studio</a
+        >
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a class="navigation-list-link link" href="./index.html">Студия</a>
           </li>
-          <li>
-            <a href="portfolio.html">Портфолио</a>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link link active" href="portfolio.html"
+              >Портфолио</a
+            >
           </li>
-          <li>
-            <a href="">Контакты</a>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
-      <address>
-        <ul>
+      <address class="header-address">
+        <ul class="adress nav">
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="address-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="address-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </address>
@@ -36,36 +50,36 @@
     <main>
       <!-- наши работы-->
       <section>
-        <h1>Портфолио</h1>
+        <h1 hidden>Портфолио</h1>
         <ul>
           <li>
-            <button type="button">Все</button>
+            <button class="portfolio-button" type="button">Все</button>
           </li>
           <li>
-            <button type="button">Веб-сайты</button>
+            <button class="portfolio-button" type="button">Веб-сайты</button>
           </li>
           <li>
-            <button type="button">Приложения</button>
+            <button class="portfolio-button" type="button">Приложения</button>
           </li>
           <li>
-            <button type="button">Дизайн</button>
+            <button class="portfolio-button" type="button">Дизайн</button>
           </li>
           <li>
-            <button type="button">Маркетинг</button>
+            <button class="portfolio-button" type="button">Маркетинг</button>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="">
+            <a class="link" href="">
               <img
                 src="./images/portfolio/portfolio-image-1.jpg"
                 alt="Открытый сайт в ноутбуке"
                 width="370"
                 height="294"
               />
-              <h2>Технокряк</h2>
-              <p>Веб-сайт</p>
-              <p>
+              <h2 class="portfolio-title">Технокряк</h2>
+              <p class="portfolio-title-meaning">Веб-сайт</p>
+              <p class="portfolio-title-description">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
                 на защищённые сервера конкурентов.
@@ -73,16 +87,16 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link" href="">
               <img
                 src="./images/portfolio/portfolio-image-2.jpg"
                 alt="Постер с баскетболистами"
                 width="370"
                 height="294"
               />
-              <h2>Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
-              <p>
+              <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+              <p class="portfolio-title-meaning">Дизайн</p>
+              <p class="portfolio-title-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
                 vel! Ipsa quas iste fuga magnam nostrum. Mollitia excepturi
                 ipsam doloribus?
@@ -90,16 +104,16 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link" href="">
               <img
                 src="./images/portfolio/portfolio-image-3.jpg"
                 alt="Эмблема ресторана"
                 width="370"
                 height="294"
               />
-              <h2>Ресторан Seafood</h2>
-              <p>Приложение</p>
-              <p>
+              <h2 class="portfolio-title">Ресторан Seafood</h2>
+              <p class="portfolio-title-meaning">Приложение</p>
+              <p class="portfolio-title-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
                 vel! Ipsa quas iste fuga magnam nostrum. Mollitia excepturi
                 ipsam doloribus?
@@ -107,16 +121,16 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link" href="">
               <img
                 src="./images/portfolio/portfolio-image-4.jpg"
                 alt="Наушники"
                 width="370"
                 height="294"
               />
-              <h2>Проект Prime</h2>
-              <p>Маркетинг</p>
-              <p>
+              <h2 class="portfolio-title">Проект Prime</h2>
+              <p class="portfolio-title-meaning">Маркетинг</p>
+              <p class="portfolio-title-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
                 vel! Ipsa quas iste fuga magnam nostrum. Mollitia excepturi
                 ipsam doloribus?
@@ -124,16 +138,16 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link" href="">
               <img
                 src="./images/portfolio/portfolio-image-5.jpg"
                 alt="Две коробки"
                 width="370"
                 height="294"
               />
-              <h2>Проект Boxes</h2>
-              <p>Приложение</p>
-              <p>
+              <h2 class="portfolio-title">Проект Boxes</h2>
+              <p class="portfolio-title-meaning">Приложение</p>
+              <p class="portfolio-title-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
                 vel! Ipsa quas iste fuga magnam nostrum. Mollitia excepturi
                 ipsam doloribus?
@@ -141,16 +155,16 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link" href="">
               <img
                 src="./images/portfolio/portfolio-image-6.jpg"
                 alt="Страница веб-сайта на мониторе"
                 width="370"
                 height="294"
               />
-              <h2>Inspiration has no Borders</h2>
-              <p>Веб-сайт</p>
-              <p>
+              <h2 class="portfolio-title">Inspiration has no Borders</h2>
+              <p class="portfolio-title-meaning">Веб-сайт</p>
+              <p class="portfolio-title-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
                 vel! Ipsa quas iste fuga magnam nostrum. Mollitia excepturi
                 ipsam doloribus?
@@ -158,16 +172,16 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link" href="">
               <img
                 src="./images/portfolio/portfolio-image-7.jpg"
                 alt="Журнал с дизайном"
                 width="370"
                 height="294"
               />
-              <h2>Издание Limited Edition</h2>
-              <p>Дизайн</p>
-              <p>
+              <h2 class="portfolio-title">Издание Limited Edition</h2>
+              <p class="portfolio-title-meaning">Дизайн</p>
+              <p class="portfolio-title-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
                 vel! Ipsa quas iste fuga magnam nostrum. Mollitia excepturi
                 ipsam doloribus?
@@ -175,16 +189,16 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link" href="">
               <img
                 src="./images/portfolio/portfolio-image-8.jpg"
                 alt="Дизайн лейб для одежды"
                 width="370"
                 height="294"
               />
-              <h2>Проект LAB</h2>
-              <p>Маркетинг</p>
-              <p>
+              <h2 class="portfolio-title">Проект LAB</h2>
+              <p class="portfolio-title-meaning">Маркетинг</p>
+              <p class="portfolio-title-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
                 vel! Ipsa quas iste fuga magnam nostrum. Mollitia excepturi
                 ipsam doloribus?
@@ -192,16 +206,16 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link" href="">
               <img
                 src="./images/portfolio/portfolio-image-9.jpg"
                 alt="Ноутбук с открытым приложением"
                 width="370"
                 height="294"
               />
-              <h2>Growing Business</h2>
-              <p>Приложение</p>
-              <p>
+              <h2 class="portfolio-title">Growing Business</h2>
+              <p class="portfolio-title-meaning">Приложение</p>
+              <p class="portfolio-title-description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
                 vel! Ipsa quas iste fuga magnam nostrum. Mollitia excepturi
                 ipsam doloribus?
@@ -213,25 +227,35 @@
     </main>
     <footer>
       <div>
-        <a href="" aria-label="Логотип"> <span>Web</span>Studio</a>
+        <a href="./index.html" class="logo-footer link" aria-label="Логотип">
+          <span class="name">Web</span>Studio</a
+        >
         <address>
           <ul>
             <li>
-              <a href="https://goo.gl/maps/4wqvgcEcArTYYAoK9" target="blank">
+              <a
+                class="footer-address link"
+                href="https://goo.gl/maps/4wqvgcEcArTYYAoK9"
+                target="blank"
+              >
                 г. Киев, пр-т Леси Украинки, 26
               </a>
             </li>
             <li>
-              <a href="mailto:info@example.com">info@example.com</a>
+              <a class="footer-contacts link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
             </li>
             <li>
-              <a href="tel:+380991111111">+38 099 111 11 11</a>
+              <a class="footer-contacts link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
             </li>
           </ul>
         </address>
       </div>
       <div>
-        <b>присоединяйтесь</b>
+        <b class="join">присоединяйтесь</b>
         <ul>
           <li>
             <a href="" aria-label="иконка инстаграма"></a>
